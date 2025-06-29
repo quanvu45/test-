@@ -1,0 +1,32 @@
+zw_cc_multi_channel:
+  endpoints:
+    - endpoint: 1
+      generic_type: GENERIC_TYPE_SWITCH_MULTILEVEL
+      specific_type: SPECIFIC_TYPE_COLOR_TUNABLE_MULTILEVEL
+      command_classes:
+        - COMMAND_CLASS_SWITCH_COLOR_V3
+        - COMMAND_CLASS_SWITCH_MULTILEVEL_V4      
+    - endpoint: 2
+      generic_type: GENERIC_TYPE_SWITCH_MULTILEVEL
+      specific_type: SPECIFIC_TYPE_COLOR_TUNABLE_MULTILEVEL
+      command_classes:
+        - COMMAND_CLASS_SWITCH_COLOR_V3
+        - COMMAND_CLASS_SWITCH_MULTILEVEL_V4
+zw_cc_color_switch:
+  colors:
+    - id: ECOLORCOMPONENT_RED
+      end_point: 1
+    - id: ECOLORCOMPONENT_GREEN
+      end_point: 1
+    - id: ECOLORCOMPONENT_BLUE
+      end_point: 1
+    - id: ECOLORCOMPONENT_RED
+      end_point: 2
+    - id: ECOLORCOMPONENT_GREEN
+      end_point: 2
+    - id: ECOLORCOMPONENT_BLUE
+      end_point: 2
+zw_cc_multilevel_switch_support:
+  switches:
+    - end_point: 1
+    - end_point: 2    
